@@ -1,0 +1,194 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Grayscale */
+  --color-gray-900: #151619;
+  --color-gray-800: #1d1f22;
+  --color-gray-700: #2b2d31;
+  --color-gray-600: #35393f;
+  --color-gray-500: #5a6069;
+  --color-gray-400: #7c8187;
+  --color-gray-300: #c1c4cb;
+  --color-gray-200: #e4e4e4;
+  --color-gray-100: #f5f5f5;
+  --color-white: #fff;
+
+  /* Accent */
+  --color-accent-primary: #e46643;
+  --color-accent-secondary: #f39765;
+}
+
+@utilities {
+  /* Grayscale background colors */
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
+  }
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
+  }
+  .bg-gray-700 {
+    background-color: var(--color-gray-700);
+  }
+  .bg-gray-600 {
+    background-color: var(--color-gray-600);
+  }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+
+  /* Grayscale text colors */
+  .text-gray-900 {
+    color: var(--color-gray-900);
+  }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
+  .text-gray-700 {
+    color: var(--color-gray-700);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+  .text-gray-300 {
+    color: var(--color-gray-300);
+  }
+  .text-gray-200 {
+    color: var(--color-gray-200);
+  }
+  .text-gray-100 {
+    color: var(--color-gray-100);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+
+  /* Accent background colors */
+  .bg-accent-primary {
+    background-color: var(--color-accent-primary);
+  }
+  .bg-accent-secondary {
+    background-color: var(--color-accent-secondary);
+  }
+
+  /* Accent text colors */
+  .text-accent-primary {
+    color: var(--color-accent-primary);
+  }
+  .text-accent-secondary {
+    color: var(--color-accent-secondary);
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
+}
+
+/* In App Heading (M) */
+.heading-m {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* In App Heading (S) */
+.heading-s {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* In App Body (S) */
+.body-s {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* Headings */
+.h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.h4 {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.h5 {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.h6 {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(
+    --color-accent-primary
+  ); /* Assure-toi d’avoir défini cette variable */
+}
+
+/* Paragraphs */
+.p {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.p-bold {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* Markdown content */
+.markdown {
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
