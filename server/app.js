@@ -6,7 +6,13 @@ import documentsRoute from "./routes/documents.route.js";
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+
+const allowedOrigin = process.env.CORS_ORIGIN;
+
+app.use(cors(
+  origin: allowedOrigin,
+  credentials: true
+));
 
 app.use("/api/v1/documents", documentsRoute);
 
